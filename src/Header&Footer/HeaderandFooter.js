@@ -110,11 +110,11 @@ function HeaderandFooter(props) {
 
                                 <button onClick={() => { showSignIn() }}>Sign In</button>
 
-                                <button onClick={() => { showProfile() }}>User Account</button>
+                                {/* <button onClick={() => { showProfile() }}>User Account</button>
 
                                 <button>Sign Out</button>
 
-                                <button onClick={() => { showHistory() }}>History</button>
+                                <button onClick={() => { showHistory() }}>History</button> */}
                             </div>
 
                             <div className="searchbar">

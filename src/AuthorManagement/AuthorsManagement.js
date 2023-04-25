@@ -28,44 +28,13 @@ function Author(props) {
         }
     ]);
 
+
     const [isAdd, setAdd] = useState(false);
     const [isUpdate, setUpdate] = useState(false);
     const [isDelete, setDelete] = useState(false);
 
     const showAdd = () => {
         setAdd(true);
-
-        var data = JSON.stringify({
-            collection: "author",
-            database: "e-library",
-            dataSource: "Cluster0",
-            filter: { author: "Thien Tam Tho Dau" } // retrieve all documents with name = "a"
-            // filter: {author: }, // retrieve all documents with name = "a"
-        });
-
-        axios({
-            method: "post",
-            url: "https://data.mongodb-api.com/app/data-mzkop/endpoint/data/v1/action/find",
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Request-Headers": "*",
-                "Access-Control-Allow-Origin": "http://localhost:3000",
-                // "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-                // "Access-Control-Allow-Headers": "Content-Type, Authorization",
-                "api-key": "cIZ9PvLJh7u1TFwM5TIIUTWXitihYJcz5FZtWrlI5n8uhclsIG7UxbT3Y83zv4Ay",
-            },
-            data: data,
-        })
-            .then(function (response) {
-                response.data.documents.forEach((document) => {
-                    console.log(JSON.stringify(document));
-                });
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-
-
         // var config = {
         //     method: 'post',
         //     url: 'https://data.mongodb-api.com/app/data-qwthr/endpoint/data/v1/action/findOne',

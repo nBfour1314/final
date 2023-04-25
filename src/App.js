@@ -24,10 +24,10 @@ function App() {
         <Footer />
       </BrowserRoute> */}
 
-      {/* <HeaderandFooter/> */}
+      <HeaderandFooter/>
       {/* <Search /> */}
       {/* <BookView />  */}
-      <AdminPage /> 
+      {/* <AdminPage />  */}
       </div>
   );
 }
