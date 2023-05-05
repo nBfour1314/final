@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from "styled-components";
 
-function Signin({setHide}) {
-
+function Signin({ setHide }) {
 	return (
 		<SignInForm>
 			<div className="blur">
@@ -11,12 +10,12 @@ function Signin({setHide}) {
 						<h2>Sign In</h2>
 
 						<div className="form-group">
-							<label for="phone">Phone number</label>
-							<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+							<label>Phone number</label>
+							<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
 						</div>
 						<div className="form-group">
-							<label for="password">Password</label>
-							<input type="password" id="password" name="password" placeholder="Enter your password" required />
+							<label>Password</label>
+							<input type="password" id="password" name="password" placeholder="Enter your password" />
 						</div>
 
 						<div className="form-group">
@@ -25,7 +24,7 @@ function Signin({setHide}) {
 
 						<div className="grBtn">
 							<button type="submit">Sign In</button>
-							<button type="button" onClick={() => {setHide(false)}}>Cancel</button>
+							<button type="button" onClick={() => { setHide(false) }}>Cancel</button>
 						</div>
 
 						<div className="signup-group">
@@ -40,6 +39,7 @@ function Signin({setHide}) {
 }
 
 export default Signin;
+
 
 const SignInForm = styled.div`
 	font-family: 'Arial', sans-serif;
