@@ -2,28 +2,6 @@ import React, { useState } from 'react';
 import styled from "styled-components";
 
 function Add({ setHide }) {
-    // const uri = 'mongodb+srv://nguyennhathao11c2:Hao%407708801314520@cluster0.wq1pija.mongodb.net/?retryWrites=true&w=majority';
-    // const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
-    // const handleSubmit = (event) => {
-    //     event.preventDefault();
-
-    //     client.connect(err => {
-    //         const collection = client.db("test").collection("user");
-    //         collection.insertOne({ 
-    //             name: event.target.text.value,
-    //             dob: event.target.date.value,
-    //             desc: event.target.description.value
-    //         }, function(err, res) {
-    //             if (err) throw err;
-    //             console.log("1 document inserted");
-    //         });
-    //         client.close();
-    //     });
-
-    //     setHide(false);
-    // };
-
     return ( 
         <AddPanel>
             <div className="blur" >

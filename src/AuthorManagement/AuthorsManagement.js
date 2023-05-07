@@ -35,36 +35,6 @@ function Author(props) {
 
     const showAdd = () => {
         setAdd(true);
-        // var config = {
-        //     method: 'post',
-        //     url: 'https://data.mongodb-api.com/app/data-qwthr/endpoint/data/v1/action/findOne',
-        //     headers:
-        //     {
-        //         'Content-Type': 'application/json',
-        //         'Accept': 'application/json',
-        //         'Access-Control-Allow-Origin': '*',
-        //         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-        //         'Access-Control-Request-Method': 'GET, POST, DELETE, PUT, OPTIONS',
-        //         'api-key': 'as4hkVXUVeTTuJpYvAqM4iq4XOlwruNHj7DLmPifsXv4rzNlkheApRDuoyIEwDk7'
-        //     },
-        //     // new Headers({
-        //     //     'Content-Type': 'application/json',
-        //     //     'Accept': 'application/json',
-        //     //     'Access-Control-Allow-Origin': '*',
-        //     //     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
-        //     //     'Access-Control-Request-Method': 'GET, POST, DELETE, PUT, OPTIONS',
-        //     //     'api-key': 'as4hkVXUVeTTuJpYvAqM4iq4XOlwruNHj7DLmPifsXv4rzNlkheApRDuoyIEwDk7'
-        //     //   }),
-        //     data: data
-        // };
-
-        // axios(config)
-        //     .then(function (response) {
-        //         console.log(JSON.stringify(response.data.data));
-        //     })
-        //     .catch(function (error) {
-        //         console.log(error);
-        //     });
     }
 
     const showUpdate = () => {
